@@ -1,0 +1,96 @@
+:root {
+    --frontColor: #cbdede;
+    --middleColor: #dcefef;
+    --backColor: #edf6f7;
+    --contentWidth: 630px;
+  }
+  
+  body{
+    border: none;
+    margin: none;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .tableau {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    perspective-origin: 0 0;
+  }
+  
+  .layer1 {
+    transform-origin: 0 0;
+    transform: translateZ(-2px) scale(3);
+    z-index: 3; 
+  }
+  
+  .layer2 {
+    transform-origin: 0 0;
+    transform: translateZ(-4px) scale(3);
+    z-index: 2;
+  }
+                                   
+  #main-wrapper .container {
+    font-family: verdana, sans-serif;
+    width: 100%;
+  z-index: 5;
+  position: relative;
+  margin: 0 auto;
+  
+ /* transform-origin: 0 0;
+  transform: translateZ(-1px) scale(1);*/
+  }
+  
+  .main h1 {
+    font-size: calc(100vw / 20);
+    text-align: center;
+  }
+  
+  .main h3 {
+    text-align: center;
+  }
+  
+  .main p {
+    font-size: 16px;
+    float: left;
+  }
+  
+  .content{
+    max-width: var(--contentWidth);
+    margin: 0 auto;
+    
+  }
+  
+  .boxes {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box1, .box2 {
+    width: calc(var(--contentWidth) / 2 - 50px);
+    height: auto;
+    background-color: #556670;
+    padding: 0px 24px;
+    color: #fff;
+    
+  }
+  
+  svg {
+    animation: float 4s infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateX(20px) scale(1)}
+    40% { transform: translateY(20px) scale(.9)}
+    80% { transform: translateY(0px) scale(.9)}
+    100% { transform: translateX(20px) scale(1)}
+  }
