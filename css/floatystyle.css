@@ -24,6 +24,7 @@
     overflow-y: scroll;
     perspective: 1px;
     perspective-origin: 0 0;
+	  -webkit-overflow-scrolling: touch;
   }
   
   .layer1 {

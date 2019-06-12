@@ -9,7 +9,7 @@
 class FloatyBackground
 {
     private $plugin_name = 'FloatyBackground';
-    private $plugin_version = '0.2';
+    private $plugin_version = '0.2.1';
     private $url;
     private $path = '';
     private $style = 'css/floatystyle.css';
